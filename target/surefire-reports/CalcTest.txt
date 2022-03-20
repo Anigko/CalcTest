@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: CalcTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! - in CalcTest
+CalcTest.testMinus()  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.NullPointerException
+	at CalcTest.testMinus(CalcTest.java:39)
+
+CalcTest.testDevideByZeroException()  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at CalcTest.testDevideByZeroException(CalcTest.java:64)
+
