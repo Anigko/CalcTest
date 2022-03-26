@@ -7,7 +7,7 @@ public class Calculator {
     BinaryOperator<Integer> plus = (x, y) -> x + y;
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
-    BinaryOperator<Integer> divide = (x, y) -> y == 0 ? divisionByZero(x, y) : x / y;
+    BinaryOperator<Integer> divide = (x, y) -> y == 0 ? 0 : x / y;
 
     UnaryOperator<Integer> pow = x -> x * x;
     UnaryOperator<Integer> abs = x -> x > 0 ? x : x * -1;
@@ -16,13 +16,4 @@ public class Calculator {
 
     Consumer<Integer> println = System.out::println;
 
-    private Integer divisionByZero(Integer x, Integer y) {
-        int value = 0;
-        try {
-            value = x / y;
-        } catch (ArithmeticException e) {
-            System.out.println("Арифметическая ошибка");
-        }
-        return value;
-    }
 }
